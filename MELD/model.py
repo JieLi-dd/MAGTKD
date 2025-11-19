@@ -309,9 +309,9 @@ class MultiHeadedAttention(nn.Module):
 
         if mask is not None:
             mask = mask.unsqueeze(1).expand_as(scores)
-            scores = scores.masked_fill(mask == 0, -1e9)
+            scores = scores.masked_fill(mask, -1e9)
 
-        attn = self.softmax(self.relu(scores))
+        attn = self.softmax(scores)
         drop_attn = self.dropout(attn)
 
         result = torch.matmul(drop_attn, value).transpose(1, 2).contiguous().view(batch_size, -1, n_heads * dim_per_head)
