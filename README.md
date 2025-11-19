@@ -119,8 +119,23 @@ Then run:
 python multimodal_fusion.py --train True
 ```
 
-## Citation
-If you find our work useful, please consider citing the following papers:
+
+## Cite
+If you find our work useful, please consider citing the following the paper:
+```
+@inproceedings{Li-2025-MAGTKD,
+  title     = {Multi-modal Anchor Gated Transformer with Knowledge Distillation for Emotion Recognition in Conversation},
+  author    = {Li, Jie and Ding, Shifei and Guo, Lili and Li, Xuan},
+  booktitle = {Proceedings of the Thirty-Fourth International Joint Conference on
+               Artificial Intelligence, {IJCAI-25}},
+  pages     = {8141--8149},
+  year      = {2025},
+  doi       = {10.24963/ijcai.2025/905},
+}
+```
+
+## References
+It is recommended to cite these papers simultaneously.
 ```
 @inproceedings{song-etal-2022-supervised,
     title = "Supervised Prototypical Contrastive Learning for Emotion Recognition in Conversation",
